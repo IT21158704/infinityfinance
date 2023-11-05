@@ -1,6 +1,6 @@
 On mobile,
 1. Text is too small throughout the site   *DONE*
-2. Footer text too small and doesnt layout nicely
+2. Footer text too small and doesnt layout nicely  **DONE*
 3. No logo or name at top of page visible on load - So when page loads, theres no mention of Infinity Finance or logo (could be any companys website)
 4. Apply Now buttons are too small through site
 5. Add an Apply now button to middle under slider and before the text "Bike Caravan or car finance" header
