@@ -1,0 +1,9 @@
+On mobile,
+1. Text is too small throughout the site   *DONE*
+2. Footer text too small and doesnt layout nicely
+3. No logo or name at top of page visible on load - So when page loads, theres no mention of Infinity Finance or logo (could be any companys website)
+4. Apply Now buttons are too small through site
+5. Add an Apply now button to middle under slider and before the text "Bike Caravan or car finance" header
+6. Most customers contact us through whatsapp so it needs to be noticeable on page load, maybe add it to the menu at the top as well? Make whatsapp icon bigger/noticeable, make it green and add the link to our whatsapp: https://wa.me/message/ES2P7U5QKHLBN1
+7. Menu (top left) too small to choose options easily
+8 . Contact us page - Should be a gap / space between bottom of map and form so it looks ok.
