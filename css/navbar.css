@@ -1,0 +1,88 @@
+/*=======Scrollbar=======*/
+::-webkit-scrollbar{
+	width: 10px;
+	background: #979797;
+}
+
+::-webkit-scrollbar-thumb{
+	background: #575757;
+}
+
+::-webkit-scrollbar-thumb:hover{
+	background: #1b1b1b;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1; /* This makes the container take up the available vertical space */
+    padding: 0; /* Optional: remove any padding to stretch to full height */
+    flex-direction: column;
+    justify-content: center; /* Vertically center the content */
+}
+
+.navbar-nav li {
+    margin-right: 15px;
+    /* You can adjust the value as needed */
+}
+
+/* Custom CSS for navigation items */
+.navbar-nav .nav-item .nav-link {
+    font-weight: bold;
+    /* Make text bold */
+    color: #143d8d;
+    /* Set text color to blue */
+    text-decoration: none;
+    /* Remove the default underline */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #8ec63f;
+    /* On hover, change text color to black */
+    text-decoration: underline #8ec63f;
+    /* On hover, add a green underline */
+    text-decoration-skip-ink: 5px;
+    /* Add a little top margin to the underline */
+}
+
+.navbar-nav .nav-item .nav-link.active {
+    color: #8ec63f;
+    /* Change text color for the active link */
+    font-weight: bold;
+    /* Make active link text bold */
+    text-decoration: underline #8ec63f;
+    /* On hover, add a green underline */
+    text-decoration-skip-ink: 5px;
+    /* Add a little top margin to the underline */
+}
+
+.fab.fa-facebook-f,
+.fab.fa-twitter {
+    color: white;
+}
+
+.indented-paragraph {
+    text-indent: 20px; /* You can adjust the value to control the indentation size */
+}
+
+.floating-button {
+    background-color: #143d8d;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.floating-button:hover {
+    background-color: #8ec63f;
+}
+
+.no-marker {
+    list-style-type: none;
+}

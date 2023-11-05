@@ -1,0 +1,104 @@
+
+label {
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+
+label:hover {
+    filter: grayscale(0);
+}
+
+input[type="radio"]:checked+label,
+.radio-container.selected label:hover {
+    filter: grayscale(0);
+}
+
+
+input[type="radio"]:checked+label {
+    filter: grayscale(0);
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    font-weight: bold;
+}
+
+label img {
+    width: 150px;
+    /* Set the desired image width */
+    height: auto;
+    border-radius: 10%;
+    /* Add rounded corners */
+}
+
+label span {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+
+#container {
+    text-align: center;
+}
+
+#step1 {
+    display: inline-block;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+}
+
+img {
+    cursor: pointer;
+}
+
+img:hover {
+    background-color: #8ec63f;
+    border-radius: 10px;
+}
+
+.radio-container {
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 10px;
+    /* Optional: Add spacing between the containers */
+}
+
+.radio-container:hover {
+    background-color: #8ec63f;
+    border-radius: 10px;
+    color: white;
+}
+
+.radio-container.selected {
+    background-color: #8ec63f;
+    border-radius: 10px;
+    color: white;
+}
+
+.custom-color-bar {
+    background-color: #8ec63f;
+    /* Replace with your desired color code */
+}
+
+fieldset {
+    border-color: transparent;
+}
+
+.custom-checkbox {
+    transform: scale(1.5); 
+    margin-right: 10px;
+  }
+  

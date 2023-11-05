@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="../css/carsearch.css">
+    <link rel="icon" href="../images/cropped-logoinitialv3512pix-1-32.png" type="image/x-icon">
+    <title>Car search</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Navbar brand -->
+                <a class="navbar-brand mt-2 mt-lg-0" href="../index.html">
+                    <img src="../images/infinity finance logo.jpg" height="40" alt="MDB Logo" loading="lazy" />
+                </a>
+                <!-- Left links -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a id="home-link" class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="about-link" class="nav-link" href="about-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="how-link" class="nav-link" href="how-it-works.html">How it works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="search-link" class="nav-link" href="car-search.html">Car search</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="contact-link" class="nav-link" href="contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+                <!-- Left links -->
+            </div>
+            <!-- Collapsible wrapper -->
+
+            <!-- Right elements -->
+            <div class="d-flex align-items-center">
+                <!-- Icon -->
+                <a class="btn text-white" style="background-color: #8ec63f;" href="apply-now.html" role="button">
+                    <i class="fas fa-envelope me-2"></i> <!-- Added the envelope icon -->
+                    Apply Now
+                </a>
+                <!-- Right elements -->
+            </div>
+            <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+    <div class="container">
+        <h3 class="mt-5" style="color: #143d8d; text-align: center;">Car search</h3>
+        <br><br>
+        <div class="container">
+            <div class="progress">
+                <div class="progress-bar custom-color-bar" role="progressbar" style="width: 10%;" id="progressBar">
+                </div>
+            </div>
+        </div>
+
+        <form id="carSearchForm" class="mt-4" action="https://formspree.io/f/mgejqajq" method="POST">
+            <div id="step1">
+                <div class="text-center">
+                    <h2 class="mt-4 mb-4">It might be daunting to know where to start your car search.</h2>
+                    <p>We can help you with that, just complete some or all of the details below and we will send you a
+                        selection of suitable cars for you to review.</p>
+                    <p>There is no obligation, we offer this only to help you get started and no car dealers will call
+                        you. We only deal with FCA approved dealerships so you can be assured that the supplying garage
+                        will be reputable and respected.</p>
+                    <p>Please tell us about the car you would like to buy</p>
+                </div>
+                <fieldset class="mt-5">
+                    <legend class="mb-4">
+                        Type of Car ?
+                    </legend>
+                    <div class="radio-container selected">
+                        <input type="radio" name="carType" class="sr-only" id="hatchback" value="hatchback" checked>
+                        <label for="hatchback">
+                            <img src="../images/hatchback.png" alt="hatchback">
+                            <span class="mt-3">Hatchback</span>
+                        </label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" name="carType" class="sr-only" id="saloon" value="saloon">
+                        <label for="saloon">
+                            <img src="../images/saloon.png" alt="saloon">
+                            <span class="mt-3">Saloon</span>
+                        </label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" name="carType" class="sr-only" id="estate" value="estate">
+                        <label for="estate">
+                            <img src="../images/estate.png" alt="estate">
+                            <span class="mt-3">Estate</span>
+                        </label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" name="carType" class="sr-only" id="Coupe" value="Coupe">
+                        <label for="Coupe">
+                            <img src="../images/coupe.png" alt="Coupe">
+                            <span class="mt-3">Coupe</span>
+                        </label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" name="carType" class="sr-only" id="MPV" value="MPV">
+                        <label for="MPV">
+                            <img src="../images/mpv.png" alt="MPV">
+                            <span class="mt-3">MPV</span>
+                        </label>
+                    </div>
+                    <div class="radio-container">
+                        <input type="radio" name="carType" class="sr-only" id="SUV" value="SUV">
+                        <label for="SUV">
+                            <img src="../images/suv.png" alt="SUV">
+                            <span class="mt-3">SUV</span>
+                        </label>
+                    </div>
+                </fieldset>
+                <div class="text-center">
+                    <!-- <button class="btn btn-secondary mt-3" id="next1">Next</button> -->
+                    <a class="btn text-white mt-3" id="next1" style="background-color: #e29100; width: 150px;"
+                        role="button">
+                        Next
+                        <i class="fas fa-angle-double-right"></i>
+                    </a>
+                </div>
+            </div>
+
+
+            <div id="step2" style="display: none">
+                <fieldset class="mt-5">
+                    <legend class="mb-4">
+                        Make/Model Preference (if any)
+                    </legend>
+                    <div class="form-group w-50 mx-auto">
+                        <textarea class="form-control text-center" rows="4" name="makeModelPreference"
+                            id="makeModelPreference"></textarea>
+                        <p class="disabled">Don't worry this can be changed later!</p>
+                    </div>
+                </fieldset>
+
+                <div class="text-center">
+                    <a class="btn text-white mt-3" id="prev2" style="background-color: #e29100; width: 150px;"
+                        role="button">
+                        <i class="fas fa-angle-double-left"></i>
+                        Previous
+                    </a>
+                    <a class="btn text-white mt-3" id="next2" style="background-color: #e29100; width: 150px;"
+                        role="button">
+                        Next
+                        <i class="fas fa-angle-double-right"></i>
+                    </a>
+                </div>
+            </div>
+
+
+            <div id="step3" style="display: none">
+                <fieldset class="mt-5">
+                    <legend class="mb-4">
+                        Transmission?
+                    </legend>
+                    <div class="radio-container p-3 selected">
+                        <input class="sr-only" type="radio" name="Transmission" id="manual" value="manual">
+                        <label class="form-check-label" for="manual"><b>Manual</b></label>
+                    </div>
+                    <div class="radio-container p-3">
+                        <input class="sr-only" type="radio" name="Transmission" id="automatic" value="automatic">
+                        <label class="form-check-label" for="automatic"><b>Automatic</b></label>
+                    </div>
+                    <div class="radio-container p-3">
+                        <input class="sr-only" type="radio" name="Transmission" id="any" value="any">
+                        <label class="form-check-label" for="any"><b>Any</b></label>
+                    </div>
+                </fieldset>
+                <div class="text-center">
+                    <a class="btn text-white mt-3" id="prev3" style="background-color: #e29100; width: 150px;"
+                        role="button">
+                        <i class="fas fa-angle-double-left"></i>
+                        Previous
+                    </a>
+                    <a class="btn text-white mt-3" id="next3" style="background-color: #e29100; width: 150px;"
+                        role="button">
+                        Next
+                        <i class="fas fa-angle-double-right"></i>
+                    </a>
+                </div>
+            </div>
+
+
+            <div id="step4" style="display: none">
+                <fieldset class="mt-5">
+                    <legend class="mb-4">
+                        Fuel Type?
+                    </legend>
+                    <div class="radio-container p-3 selected">
+                        <input class="sr-only" type="radio" name="FuelType" id="petrol" value="petrol">
+                        <label class="form-check-label" for="petrol"><b>Petrol</b></label>
+                    </div>
+                    <div class="radio-container p-3">
+                        <input class="sr-only" type="radio" name="FuelType" id="diesel" value="diesel">
+                        <label class="form-check-label" for="diesel"><b>Diesel</b></label>
+                    </div>
+                    <div class="radio-container p-3">
+                        <input class="sr-only" type="radio" name="FuelType" id="any" value="any">
+                        <label class="form-check-label" for="any"><b>Any</b></label>
+                    </div>
+                </fieldset>
+                <div class="text-center">
+                    <a class="btn text-white mt-3" id="prev4" style="background-color: #e29100; width: 150px;"
+                        role="button">
+                        <i class="fas fa-angle-double-left"></i>
+                        Previous
+                    </a>
+                    <a class="btn text-white mt-3" id="next4" style="background-color: #e29100; width: 150px;"
+                        role="button">
+                        Next
+                        <i class="fas fa-angle-double-right"></i>
+                    </a>
+                </div>
+            </div>
+
+
+
+            <div id="step5" style="display: none">
+                <fieldset class="mt-5">
+                    <legend class="mb-4">
+                        No. of Doors?
+                    </legend>
+                    <div class="radio-container p-3 selected">
+                        <input class="sr-only" type="radio" name="Doors" id="2" value="2">
+                        <label class="form-check-label" for="2"><b>2</b></label>
+                    </div>
+                    <div class="radio-container p-3">
+                        <input class="sr-only" type="radio" name="Doors" id="3" value="3">
+                        <label class="form-check-label" for="3"><b>3</b></label>
+                    </div>
+                    <div class="radio-container p-3">
+                        <input class="sr-only" type="radio" name="Doors" id="4" value="4">
+                        <label class="form-check-label" for="4"><b>4</b></label>
+                    </div>
+                    <div class="radio-container p-3">
+                        <input class="sr-only" type="radio" name="Doors" id="5" value="5">
+                        <label class="form-check-label" for="5"><b>5</b></label>
+                    </div>
+                    <div class="radio-container p-3">
+                        <input class="sr-only" type="radio" name="Doors" id="any" value="any">
+                        <label class="form-check-label" for="any"><b>Any</b></label>
+                    </div>
+                </fieldset>
+                <div class="text-center">
+                    <a class="btn text-white mt-3" id="prev5" style="background-color: #e29100; width: 150px;"
+                        role="button">
+                        <i class="fas fa-angle-double-left"></i>
+                        Previous
+                    </a>
+                    <a class="btn text-white mt-3" id="next5" style="background-color: #e29100; width: 150px;"
+                        role="button">
+                        Next
+                        <i class="fas fa-angle-double-right"></i>
+                    </a>
+                </div>
+            </div>
+
+
+            <div id="step6" style="display: none">
+                <fieldset class="mt-5">
+                    <legend class="mb-4">
+                        No. of Seats?
+                    </legend>
+                    <div class="radio-container p-3 selected">
+                        <input class="sr-only" type="radio" name="Seats" id="2" value="2">
+                        <label class="form-check-label" for="2"><b>2</b></label>
+                    </div>
+                    <div class="radio-container p-3">
+                        <input class="sr-only" type="radio" name="Seats" id="3" value="3">
+                        <label class="form-check-label" for="3"><b>3</b></label>
+                    </div>
+                    <div class="radio-container p-3">
+                        <input class="sr-only" type="radio" name="Seats" id="4" value="4">
+                        <label class="form-check-label" for="4"><b>4</b></label>
+                    </div>
+                    <div class="radio-container p-3">
+                        <input class="sr-only" type="radio" name="Seats" id="5" value="5">
+                        <label class="form-check-label" for="5"><b>5</b></label>
+                    </div>
+                    <div class="radio-container p-3">
+                        <input class="sr-only" type="radio" name="Seats" id="6" value="6">
+                        <label class="form-check-label" for="6"><b>6</b></label>
+                    </div>
+                    <div class="radio-container p-3">
+                        <input class="sr-only" type="radio" name="Seats" id="7+" value="7+">
+                        <label class="form-check-label" for="7+"><b>7+</b></label>
+                    </div>
+                    <div class="radio-container p-3">
+                        <input class="sr-only" type="radio" name="Seats" id="any" value="any">
+                        <label class="form-check-label" for="any"><b>Any</b></label>
+                    </div>
+                </fieldset>
+                <div class="text-center">
+                    <a class="btn text-white mt-3" id="prev6" style="background-color: #e29100; width: 150px;"
+                        role="button">
+                        <i class="fas fa-angle-double-left"></i>
+                        Previous
+                    </a>
+                    <a class="btn text-white mt-3" id="next6" style="background-color: #e29100; width: 150px;"
+                        role="button">
+                        Next
+                        <i class="fas fa-angle-double-right"></i>
+                    </a>
+                </div>
+            </div>
+
+
+
+            <div id="step7" style="display: none">
+                <fieldset class="mt-5">
+                    <legend class="mb-4">
+                        Colour?
+                    </legend>
+                    <div class="radio-container p-3 selected">
+                        <input class="sr-only" type="radio" name="Colour" id="red" value="red">
+                        <label class="form-check-label" for="red"><b>Red</b></label>
+                    </div>
+                    <div class="radio-container p-3">
+                        <input class="sr-only" type="radio" name="Colour" id="green" value="green">
+                        <label class="form-check-label" for="green"><b>Green</b></label>
+                    </div>
+                    <div class="radio-container p-3">
+                        <input class="sr-only" type="radio" name="Colour" id="blue" value="blue">
+                        <label class="form-check-label" for="blue"><b>Blue</b></label>
+                    </div>
+                    <div class="radio-container p-3">
+                        <input class="sr-only" type="radio" name="Colour" id="grey" value="grey">
+                        <label class="form-check-label" for="grey"><b>Grey</b></label>
+                    </div>
+                    <div class="radio-container p-3">
+                        <input class="sr-only" type="radio" name="Colour" id="white" value="white">
+                        <label class="form-check-label" for="white"><b>White</b></label>
+                    </div>
+                    <div class="radio-container p-3">
+                        <input class="sr-only" type="radio" name="Colour" id="black" value="black">
+                        <label class="form-check-label" for="black"><b>Black</b></label>
+                    </div>
+                    <div class="radio-container p-3">
+                        <input class="sr-only" type="radio" name="Colour" id="silver" value="silver">
+                        <label class="form-check-label" for="silver"><b>Silver</b></label>
+                    </div>
+                    <div class="radio-container p-3">
+                        <input class="sr-only" type="radio" name="Colour" id="other" value="other">
+                        <label class="form-check-label" for="other"><b>Other</b></label>
+                    </div>
+                </fieldset>
+                <div class="text-center">
+                    <a class="btn text-white mt-3" id="prev7" style="background-color: #e29100; width: 150px;"
+                        role="button">
+                        <i class="fas fa-angle-double-left"></i>
+                        Previous
+                    </a>
+                    <a class="btn text-white mt-3" id="next7" style="background-color: #e29100; width: 150px;"
+                        role="button">
+                        Next
+                        <i class="fas fa-angle-double-right"></i>
+                    </a>
+                </div>
+            </div>
+
+
+            <div id="step8" style="display: none">
+                <fieldset class="mt-5">
+                    <legend class="mb-4">
+                        Monthly Payment Budget
+                    </legend>
+                    <div class="radio-container p-3 selected">
+                        <input class="sr-only" type="radio" name="PaymentBudget" id="100-200" value="100-200">
+                        <label class="form-check-label" for="100-200"><b>100-200</b></label>
+                    </div>
+                    <div class="radio-container p-3">
+                        <input class="sr-only" type="radio" name="PaymentBudget" id="200-300" value="200-300">
+                        <label class="form-check-label" for="200-300"><b>200-300</b></label>
+                    </div>
+                    <div class="radio-container p-3">
+                        <input class="sr-only" type="radio" name="PaymentBudget" id="300-400" value="300-400">
+                        <label class="form-check-label" for="300-400"><b>300-400</b></label>
+                    </div>
+                    <div class="radio-container p-3">
+                        <input class="sr-only" type="radio" name="PaymentBudget" id="400+" value="400+">
+                        <label class="form-check-label" for="400+"><b>400+</b></label>
+                    </div>
+                    <div class="radio-container p-3">
+                        <input class="sr-only" type="radio" name="PaymentBudget" id="Not sure" value="Not sure">
+                        <label class="form-check-label" for="Not sure"><b>Not sure</b></label>
+                    </div>
+                </fieldset>
+                <div class="text-center">
+                    <a class="btn text-white mt-3" id="prev8" style="background-color: #e29100; width: 150px;"
+                        role="button">
+                        <i class="fas fa-angle-double-left"></i>
+                        Previous
+                    </a>
+                    <a class="btn text-white mt-3" id="next8" style="background-color: #e29100; width: 150px;"
+                        role="button">
+                        Next
+                        <i class="fas fa-angle-double-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Repeat the above structure for each step -->
+
+            <div id="step9" style="display: none">
+                <fieldset class="mt-5">
+                    <legend class="mb-4">
+                        Any Other Preferences
+                    </legend>
+                    <div class="form-group w-50 mx-auto">
+                        <textarea class="form-control" id="OtherPreferences" name="OtherPreferences"
+                            placeholder="(Leather, SatNav, Age, Mileage etc)" rows="4"></textarea>
+                    </div>
+                </fieldset>
+
+                <div class="text-center">
+                    <a class="btn text-white mt-3" id="prev9" style="background-color: #e29100; width: 150px;"
+                        role="button">
+                        <i class="fas fa-angle-double-left"></i>
+                        Previous
+                    </a>
+                    <a class="btn text-white mt-3" id="next9" style="background-color: #e29100; width: 150px;"
+                        role="button">
+                        Next
+                        <i class="fas fa-angle-double-right"></i>
+                    </a>
+                </div>
+            </div>
+
+
+            <div id="step10" style="display: none">
+                <fieldset class="mt-5">
+                    <legend class="mb-4">
+                        Your Email Address
+                    </legend>
+                    <div class="form-group w-50 mx-auto">
+                        <input type="email" class="form-control" id="email" placeholder="your email" name="email"
+                            required>
+                    </div>
+                </fieldset>
+
+                <div class="text-center">
+                    <a class="btn text-white mt-3" id="prev10" style="background-color: #e29100; width: 150px;"
+                        role="button">
+                        <i class="fas fa-angle-double-left"></i>
+                        Previous
+                    </a>
+                    <button class="btn text-white mt-3" type="submit"
+                        style="background-color: #e29100; width: 150px;">Submit <i class="fas fa-bookmark"></i></button>
+                </div>
+            </div>
+        </form>
+
+
+    </div>
+    <a href="https://api.whatsapp.com/send/?phone=447405489323&text=Hi+Infinity&type=phone_number&app_absent=0">
+        <button class="btn floating-button position-fixed bottom-0 end-0 m-4">
+            <i class="fab fa-whatsapp d-flex align-items-center justify-content-center"></i>
+        </button></a>
+    <br>
+    <br>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-white" style="background-color: #143d8d;">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div>
+                <a href="https://web.facebook.com/Infinitycarfinance" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com/Infinity_Financ" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <img src="../images/logo-footer.png" alt="Infinity Finance Logo" loading="lazy" />
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Legal Information
+                        </h6>
+                        <p>
+                            <a href="privacy-policy.html" class="text-reset">Privacy Policy</a>
+                        </p>
+                        <p>
+                            <a href="terms-conditions.html" class="text-reset">Terms & Conditions</a>
+                        </p>
+                        <p>
+                            <a href="complaints-policy.html" class="text-reset">Complaints Policy</a>
+                        </p>
+                        <p>
+                            <a href="disclosure.html" class="text-reset">Disclosure</a>
+                        </p>
+                        <p>
+                            <a href="faq.html" class="text-reset">FAQ’s</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-5">
+                            <!-- Useful links -->
+                        </h6>
+                        <p>
+                            <a href="car-finance.html" class="text-reset">Car Finance</a>
+                        </p>
+                        <p>
+                            <a href="bike-finance.html" class="text-reset">Bike Finance</a>
+                        </p>
+                        <p>
+                            <a href="cookie-policy.html" class="text-reset">Cookie Policy</a>
+                        </p>
+                        <p>
+                            <a href="real-infinity-finance.html" class="text-reset">Real Infinity Finance</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3 text-white"></i> 170A London Road,
+                            Stockport,
+                            SK7, 4DJ</p>
+                        <p>
+                            <i class="fas fa-envelope me-3 text-white"></i>
+                            info@infinityfinance.co.uk
+                        </p>
+                        <p><i class="fas fa-phone me-3 text-white"></i> 0161 292 8200</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+            © 2023 Copyright:
+            <a class="text-white fw-bold" >Infinity Finance</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById("next1").addEventListener("click", function (e) {
+            e.preventDefault();
+            document.getElementById("step1").style.display = "none";
+            document.getElementById("step2").style.display = "block";
+        });
+
+        document.getElementById("prev2").addEventListener("click", function (e) {
+            e.preventDefault();
+            document.getElementById("step2").style.display = "none";
+            document.getElementById("step1").style.display = "block";
+        });
+
+        // Repeat this block of code for each step (step3, step4, etc.)
+
+        document.getElementById("next10").addEventListener("click", function (e) {
+            e.preventDefault();
+            document.getElementById("step10").style.display = "none";
+            // Handle the final submission or display a thank you message
+        });
+
+        document.getElementById("prev10").addEventListener("click", function (e) {
+            e.preventDefault();
+            document.getElementById("step10").style.display = "none";
+            document.getElementById("step9").style.display = "block";
+        });
+
+        // Handle form submission
+        document.getElementById("carSearchForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+            // Handle the form submission, e.g., send data to a server
+        });
+
+
+    </script>
+    <script>
+        
+        let currentStep = 1;
+        const totalSteps = 10;
+
+        // Update the progress bar
+        function updateProgressBar() {
+            const progress = (currentStep / totalSteps) * 100;
+            document.getElementById("progressBar").style.width = progress + "%";
+        }
+
+        // Handle "Next" button click for each step
+        function showNextStep(step) {
+            document.getElementById(`step${step}`).style.display = "none";
+            step++;
+            currentStep = step;
+            document.getElementById(`step${step}`).style.display = "block";
+            updateProgressBar();
+        }
+
+        // Handle "Previous" button click for each step
+        function showPreviousStep(step) {
+            document.getElementById(`step${step}`).style.display = "none";
+            step--;
+            currentStep = step;
+            document.getElementById(`step${step}`).style.display = "block";
+            updateProgressBar();
+        }
+
+        // Attach click event listeners to "Next" and "Previous" buttons for each step
+        for (let step = 1; step <= totalSteps; step++) {
+            const nextBtn = document.getElementById(`next${step}`);
+            if (nextBtn) {
+                nextBtn.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    showNextStep(step);
+                });
+            }
+
+            const prevBtn = document.getElementById(`prev${step}`);
+            if (prevBtn) {
+                prevBtn.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    showPreviousStep(step);
+                });
+            }
+        }
+
+        const radioContainers = document.querySelectorAll(".radio-container");
+
+        radioContainers.forEach(container => {
+            container.addEventListener("click", () => {
+                // Unselect all radio containers
+                radioContainers.forEach(c => c.classList.remove("selected"));
+                // Select the clicked radio container
+                container.classList.add("selected");
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>
