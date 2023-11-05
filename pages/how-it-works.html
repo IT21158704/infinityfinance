@@ -4,15 +4,29 @@
 <head>
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- MDB -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="../css/navbar.css">
     <link rel="icon" href="../images/cropped-logoinitialv3512pix-1-32.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How it works</title>
+    <style>
+        .container2 {
+            position: relative;
+            /* text-align: center; */
+            color: white;
+        }
+
+        /* Top left text */
+        .top-left {
+            position: absolute;
+            top: 8px;
+            left: 16px;
+        }
+    </style>
 </head>
 
 <body>
@@ -26,13 +40,13 @@
                 aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
+            <a class="navbar-brand mt-2 mt-lg-0" href="index.html">
+                <img src="../images/infinity finance logo.jpg" height="40" alt="MDB Logo" loading="lazy" />
+            </a>
 
             <!-- Collapsible wrapper -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <!-- Navbar brand -->
-                <a class="navbar-brand mt-2 mt-lg-0" href="../index.html">
-                    <img src="../images/infinity finance logo.jpg" height="40" alt="MDB Logo" loading="lazy" />
-                </a>
                 <!-- Left links -->
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
@@ -48,7 +62,13 @@
                         <a id="search-link" class="nav-link" href="car-search.html">Car search</a>
                     </li>
                     <li class="nav-item">
+                        <a id="faq-link" class="nav-link" href="faq.html">FAQ’s</a>
+                    </li>
+                    <li class="nav-item">
                         <a id="contact-link" class="nav-link" href="contactus.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="whatsapp-link" class="nav-link" href="https://wa.me/message/ES2P7U5QKHLBN1">Whatsapp</a>
                     </li>
                 </ul>
                 <!-- Left links -->
@@ -58,8 +78,10 @@
             <!-- Right elements -->
             <div class="d-flex align-items-center">
                 <!-- Icon -->
-                <a class="btn text-white" style="background-color: #8ec63f;" href="apply-now.html" role="button">
-                    <i class="fas fa-envelope me-2"></i> <!-- Added the envelope icon -->
+                <a class="btn btn-lg text-white applynow" style="background-color: #8ec63f;" href="apply-now.html"
+                    role="button">
+                    <i class="fas fa-envelope me-2"></i>
+                    <!-- Added the envelope icon -->
                     Apply Now
                 </a>
                 <!-- Right elements -->
@@ -67,42 +89,53 @@
             <!-- Container wrapper -->
     </nav>
     <!-- Navbar -->
-    <div class="container">
-        <img src="../images/howitworksimage.png" class="img-fluid" alt="Wild Landscape">
-        <h3 class="mt-3 mb-3" style="color: #143d8d;">How It Works…</h3>
+    <div class="containerg3">
+        <div class="container2">
+            <img src="../images/about_bg.jpg" class="img-fluid" alt="Snow" style="width:100%;">
+            <div class="top-left">
+                <h1 class="mt-3 mb-3 m-lg-4" style="color: #143d8d;">How it works...</h1>
+                <div style="color: #272727;">
+                    <p class="text-justify m-lg-4">Once approved, we tell you the maximum you qualify for, also known as
+                        a "credit limit." <br> We will answer any
+                        questions you have and provide any help or support in your search for the vehicle you want to
+                        buy.</p>
 
-        <p>Once approved, we tell you the maximum you qualify for, also known as a "credit limit." We will answer any
-            questions you have and provide any help or support in your search for the vehicle you want to buy.</p>
+                    <p class="text-justify m-lg-4">If you need a higher credit limit, just call us, and we will look at
+                        the options available. We usually send a <br> 
+                        selection of vehicles to you to get you started, and you can use the filters in the list to
+                        choose your <br> 
+                        ideal one. You can buy from any reputable dealer. If you need help finding a specific vehicle,
+                        just let us <br> 
+                        know, and we will make a no-obligation search and provide you with a selection of options. If
+                        you know what <br> 
+                        you want and have found the vehicle you want to buy, just call or email us with the details.</p>
 
-        <p>If you need a higher credit limit, just call us, and we will look at the options available. We usually send a
-            selection of vehicles to you to get you started, and you can use the filters in the list to choose your
-            ideal one. You can buy from any reputable dealer. If you need help finding a specific vehicle, just let us
-            know, and we will make a no-obligation search and provide you with a selection of options. If you know what
-            you want and have found the vehicle you want to buy, just call or email us with the details.</p>
+                    <p class="text-justify m-lg-4">Once you have chosen a vehicle you want to buy, we'll provide a quote
+                        and email the documents for you to <br> 
+                        e-sign once we have checked the vehicle for you and you're happy to proceed. You don't need to
+                        visit an <br> 
+                        office; everything is completed over email and telephone. The dealership you're buying the
+                        vehicle from is <br> 
+                        paid directly.</p>
 
-        <p>Once you have chosen a vehicle you want to buy, we'll provide a quote and email the documents for you to
-            e-sign once we have checked the vehicle for you and you're happy to proceed. You don't need to visit an
-            office; everything is completed over email and telephone. The dealership you're buying the vehicle from is
-            paid directly.</p>
+                    <p class="text-justify m-lg-4">Once the dealer is in receipt of the funds, you'll drive the vehicle <br> 
+                        away. The process is simple, quick, and
+                        usually takes no more than 48 hours.</p>
 
-        <p>Once the dealer is in receipt of the funds, you'll drive the vehicle away. The process is simple, quick, and
-            usually takes no more than 48 hours.</p>
-
-        <p>As a matter of course, we organize a check on the vehicle for you to ensure there's no accident or hidden
-            problems with the vehicle. We also value the vehicle to ensure that you're not paying over the odds for it,
-            and we will advise you if there are any issues.</p>
-
-        <!-- Icon -->
-        <a class="btn text-white" style="background-color: #8ec63f;" href="apply-now.html" role="button">
-            <i class="fas fa-envelope me-2"></i> <!-- Added the envelope icon -->
-            Apply Now
-        </a>
-
-
+                    <p class="text-justify m-lg-4">As a matter of course, we organize a check on the vehicle for you to
+                        ensure there's no accident or hidden <br> 
+                        problems with the vehicle. We also value the vehicle to ensure that you're not paying over the
+                        odds for it, <br> 
+                        and we will advise you if there are any issues.</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <a href="https://api.whatsapp.com/send/?phone=447405489323&text=Hi+Infinity&type=phone_number&app_absent=0">
+
+
+    <a href="https://wa.me/message/ES2P7U5QKHLBN1">
         <button class="btn floating-button position-fixed bottom-0 end-0 m-4">
-            <i class="fab fa-whatsapp d-flex align-items-center justify-content-center"></i>
+            <i class="fab fa-whatsapp d-flex align-items-center justify-content-center" style="height: 100%;"></i>
         </button></a>
     <br>
     <br>
@@ -121,8 +154,8 @@
                 <a href="https://web.facebook.com/Infinitycarfinance" class="me-4 text-reset">
                     <i class="fab fa-facebook-f"></i>
                 </a>
-                <a href="https://twitter.com/Infinity_Financ" class="me-4 text-reset">
-                    <i class="fab fa-twitter"></i>
+                <a href="https://www.instagram.com/infinitymotorfinance/%22" class="me-0 text-reset">
+                    <i class="fab fa-instagram"></i>
                 </a>
             </div>
         </section>
@@ -207,8 +240,32 @@
 
         <!-- Copyright -->
         <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
-            © 2023 Copyright:
-            <a class="text-white fw-bold" >Infinity Finance</a>
+            <p>Representative Example: Hire Purchase Agreement repayable over 48 months. Rate of Interest: 14.0% p.a.
+                flat rate(fixed). Vehicle Purchase Price: £7,500. Deposit: £0.00. Amount of Credit: £7,500. Acceptance
+                Fee: £325.00. Interest Payable: £4,200.44. Option to Purchase Fee: £200.00. Total Charge For Credit:
+                £4,725.44. 47 Monthly Repayments Of: £250.53 Followed By 1 Final Repayment Of: £450.53 (Final payment
+                includes Option to Purchase Fee). Total Amount Payable: £12,225.44. Representative APR:29.35%. Hire
+                Purchase. Terms and conditions apply. You will not own the vehicle until all payments are made. Finance
+                subject to status.</p>
+            <p style="font-weight: lighter; font-size: small;">Disclosure: Infinity 2007 Limited trading as Infinity Finance act as an
+                independent credit broker, not a lender. We work with a number of carefully selected finance providers
+                who offer finance. The product provided is Hire Purchase or Conditional Sale for retail consumers. We
+                can introduce you to a limited number of finance providers to assist with your purchase, who may
+                remunerate us for introducing you to them. Any commission received is a fixed payment and will not
+                impact the rate, amount or acceptance you are offered. This may vary by lender. You are able to request
+                further information on this at any time. Infinity Finance is authorised and regulated by the Financial
+                Conduct Authority (FCA) as a credit broker. Infinity 2007 Limited Firm Reference Number (FRN) is 719579.
+                Data Protection Register Number (ICO) is Z1660491. All finance is subject to status and income.
+                Applicants must be 18 or over, terms and conditions apply, guarantees and indemnities may be required.
+                <br>Reg. Office: 6D Lowick Close, Hazel Grove, Stockport, SK7 5ED Registered in England. Company Reg. No.
+                6296225 FCA: Firm Reference Number (FRN) is 719579 ICO: Registration Number: Z1660491</p>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+
+            © 2023 <a class="text-white fw-bold">Infinity Finance</a>. All Rights Reserved.
+
         </div>
         <!-- Copyright -->
     </footer>
