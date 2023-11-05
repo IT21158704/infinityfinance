@@ -77,6 +77,9 @@ body {
     height: 50px;
     font-size: 20px;
 }
+.floating-button i{
+    transform: translateY(-9%);
+}
 
 .floating-button:hover {
     background-color: #8ec63f;
@@ -84,4 +87,13 @@ body {
 
 .no-marker {
     list-style-type: none;
+}
+@media screen and (max-width: 768px) {
+    .carousel-item{
+        aspect-ratio: 16/9;
+    }
+      
+    .object-fit-cover{
+        object-fit: cover !important;
+    }
 }
